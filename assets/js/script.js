@@ -1,10 +1,9 @@
 import { createTask } from "./createTask.js";
 import { functionAdd } from "./functionAdd.js";
+import { functionDelete } from "./functionDelete.js";
 
-let arrayExemple = ["first", "second", "troisieme"];
-let arrayTask = [];
+functionAdd();
 
-createTask(arrayExemple);
-functionAdd (arrayTask);
-
-console.log(arrayTask);
+window.addEventListener("change", () => {
+  functionDelete();
+});
