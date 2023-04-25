@@ -1,12 +1,8 @@
-import { createTask } from "./createTask.js";
-import { displayTask } from "./displayTask.js";
 import { functionAdd } from "./functionAdd.js";
-import { functionDelete } from "./functionDelete.js";
+// import { displayTask } from "./displayTask.js";
 
 let taskArray = [];
 
 functionAdd(taskArray);
-displayTask(taskArray);
-window.addEventListener("change", () => {
-  functionDelete();
-});
+// displayTask(taskArray);
+console.log( taskArray);

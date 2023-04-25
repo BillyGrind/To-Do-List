@@ -7,3 +7,9 @@ export function functionAdd(array) {
     array.push(inputValue);
   });
 }
+
+
+const setStorage = () => localStorage.setItem('TASKS', JSON.stringify(Array.from(tasks)));
+
+
+//https://codaholic.sillo.org/2020/01/04/maitriser-javascript-une-liste-de-taches/
