@@ -5,16 +5,9 @@ export function functionAdd(array) {
   let inputText = document.getElementsByClassName("input_text")[0];
 
   buttonAdd.addEventListener("click", () => {
+    localStorage.setItem("taskItem", JSON.stringify(array));
     let inputValue = inputText.value;
     array.push(inputValue);
     displayTask(inputValue);
-    localStorage.setItem('taskItem', JSON.stringify(array));
   });
 }
-
-
-
-// const setStorage = () => localStorage.setItem('TASKS', JSON.stringify(Array.from(tasks)));
-
-
-//https://codaholic.sillo.org/2020/01/04/maitriser-javascript-une-liste-de-taches/

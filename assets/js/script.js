@@ -1,9 +1,8 @@
 import { functionAdd } from "./functionAdd.js";
-
+import { updateLabel } from "./updateLabet.js";
 let taskArray = [];
-
 functionAdd(taskArray);
-
+// updateLabel();
 console.log(taskArray);
 
 // Add delete button for each task
