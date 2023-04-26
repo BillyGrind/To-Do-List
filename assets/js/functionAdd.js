@@ -7,9 +7,11 @@ export function functionAdd(array) {
   buttonAdd.addEventListener("click", () => {
     let inputValue = inputText.value;
     array.push(inputValue);
-    displayTask(array);
+    displayTask(inputValue);
+    localStorage.setItem('taskItem', JSON.stringify(array));
   });
 }
+
 
 
 // const setStorage = () => localStorage.setItem('TASKS', JSON.stringify(Array.from(tasks)));

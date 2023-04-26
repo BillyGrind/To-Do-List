@@ -1,13 +1,8 @@
 import { functionAdd } from "./functionAdd.js";
-// import { functionDelete } from "./functionDelete.js";
 
 let taskArray = [];
 
-
 functionAdd(taskArray);
-// functionDelete();
-
-
 
 console.log(taskArray);
 
