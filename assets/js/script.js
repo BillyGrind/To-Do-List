@@ -1,8 +1,8 @@
-import { functionAdd } from "./functionAdd.js";
-// import { displayTask } from "./displayTask.js";
+ import { functionAdd } from "./functionAdd.js";
 
 let taskArray = [];
 
 functionAdd(taskArray);
-// displayTask(taskArray);
-console.log( taskArray);
+
+
+console.log(taskArray);
