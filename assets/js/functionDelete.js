@@ -1,11 +1,13 @@
 export function functionDelete() {
-  let checkBoxes = document.querySelectorAll("#to_do_list_task_checkbox");
+  let checkBox = document.getElementById("to_do_list_task_checkbox");
+  let buttonDelete = document.getElementsByClassName("button_delete");
 
-  checkBoxes.forEach((checkBox) => {
+  checkBox.addEventListener("click", () => {
     if (checkBox.checked) {
-      console.log("checked");
+      buttonDelete.style.display = "visible";
     } else {
-      console.log("unchecked");
+      buttonDelete.style.display = "none";
     }
+    console.log("click");
   });
 }
