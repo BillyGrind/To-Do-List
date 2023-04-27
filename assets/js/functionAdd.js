@@ -5,9 +5,10 @@ export function functionAdd(array) {
   let inputText = document.getElementsByClassName("input_text")[0];
 
   buttonAdd.addEventListener("click", () => {
-    localStorage.setItem("taskItem", JSON.stringify(array));
+    localStorage.setItem("taskItems", JSON.stringify(array));
     let inputValue = inputText.value;
     array.push(inputValue);
-    displayTask(inputValue);
+    displayTask(taskItems);
+    inputText.value = "";
   });
 }
