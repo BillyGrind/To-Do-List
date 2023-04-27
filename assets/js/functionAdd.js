@@ -9,6 +9,7 @@ export function functionAdd(array) {
     let inputValue = inputText.value;
     array.push(inputValue);
     displayTask(inputValue);
+    inputText.value="";
   });
 }
 
