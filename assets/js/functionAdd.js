@@ -5,9 +5,17 @@ export function functionAdd(array) {
   let inputText = document.getElementsByClassName("input_text")[0];
 
   buttonAdd.addEventListener("click", () => {
-    localStorage.setItem("taskItem", JSON.stringify(array));
+    // localStorage.setItem("taskItem", JSON.stringify(array));
     let inputValue = inputText.value;
     array.push(inputValue);
     displayTask(inputValue);
   });
 }
+
+// buttonAdd.addEventListener("click", () => {
+//   localStorage.setItem("taskItem", JSON.stringify(array));
+//   let inputValue = inputText.value;
+//   array.push(inputValue);
+//   let taskItems = JSON.parse(localStorage.getItem("taskItem"));
+//   displayTask(inputValue);
+// });

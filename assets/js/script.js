@@ -1,5 +1,5 @@
 import { functionAdd } from "./functionAdd.js";
-import { updateLabel } from "./updateLabet.js";
+// import { updateLabel } from "./updateLabet.js";
 let taskArray = [];
 functionAdd(taskArray);
 // updateLabel();
