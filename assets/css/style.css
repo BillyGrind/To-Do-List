@@ -1,4 +1,5 @@
 @import url("./normalize.css");
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
 body {
   background-color: #dafeb7;
   display: flex;
@@ -17,6 +18,15 @@ body {
 
 h1 {
   text-align: center;
+  font-family: "Kanit";
+  font-weight: 400;
+  font-size: 50px;
+  color: #f2fbe0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
 }
 
 .input_text {
@@ -28,19 +38,35 @@ h1 {
 .button_add {
   margin: auto;
   width: 50px;
-  justify-content: center;
   background-color: #acc18a;
-  text-align: center;
   border-radius: 5px;
+}
+
+ul {
+  margin: 50px auto 50px 0px;
 }
 
 li {
   text-decoration: none;
   list-style: none;
+  color: #dafeb7;
+  display: flex;
+  justify-content: stretch;
+  width: 300px;
+  margin: 10px auto;
+}
+
+label {
+  text-align: center;
+  font-family: "Kanit";
+  font-weight: 400;
+  font-size: 20px;
+  color: #dafeb7;
+  margin: auto;
 }
 
 .avertissement {
   font-weight: bolder;
-  color: red;
+  color: #dafeb7;
   text-align: center;
 }/*# sourceMappingURL=style.css.map */
