@@ -5,19 +5,28 @@ export function functionAdd(array) {
   let inputText = document.getElementsByClassName("input_text")[0];
   let form = document.querySelector("form");
 
+  // form.addEventListener("submit", (event) => {
+  //   event.preventDefault();
+  //   if (event.key === "Enter") {
+  //     let inputValue = inputText.value;
+  //     array.push(inputValue);
+  //     localStorage.setItem("myListItems", JSON.stringify(array));
+  //     displayTask(array);
+  //     inputText.value = "";
+  //   } else {
+  //     let inputValue = inputText.value;
+  //     array.push(inputValue);
+  //     localStorage.setItem("myListItems", JSON.stringify(array));
+  //     displayTask(array);
+  //     inputText.value = "";
+  //   }
+  // });
   form.addEventListener("submit", (event) => {
-    // localStorage.setItem("taskItem", JSON.stringify(array));
     event.preventDefault();
-    if (event.key === "Enter") {
-      let inputValue = inputText.value;
-      array.push(inputValue);
-      displayTask(inputValue);
-      inputText.value = "";
-    } else {
-      let inputValue = inputText.value;
-      array.push(inputValue);
-      displayTask(inputValue);
-      inputText.value = "";
-    }
+    let inputValue = inputText.value;
+    array.push(inputValue);
+    localStorage.setItem("myListItems", JSON.stringify(array));
+    displayTask(array);
+    inputText.value = "";
   });
 }

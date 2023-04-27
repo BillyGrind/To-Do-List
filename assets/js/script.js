@@ -1,7 +1,9 @@
 import { functionAdd } from "./functionAdd.js";
+import { displayTask } from "./displayTask.js";
 // import { updateLabel } from "./updateLabet.js";
-let taskArray = [];
+export let taskArray = [];
 functionAdd(taskArray);
+displayTask(taskArray);
 // updateLabel();
 console.log(taskArray);
 
