@@ -27,20 +27,20 @@ export function displayTask(elem) {
       deleteButton.style.display = "none";
     }
   });
-  // click and update task
-  // let label = listItem.getElementsByTagName("label");
-  // label.addEventListener("click", () => {
-  //   const input = document.createElement("input");
-  //   input.type = "text";
-  //   input.value = label.textContent;
-  //   listItem.replaceChild(input, label);
-  //   input.addEventListener("keyup", (event) => {
-  //     if (event.key === "Enter") {
-  //       listItems[listItems.indexOf(label.textContent)] = input.value;
-  //       label.textContent = input.value;
-  //       listItem.replaceChild(label, input);
-  //       localStorage.setItem("myListItems", JSON.stringify(listItems));
-  //     }
-  //   });
-  //});
+  // add event listener pour le label
+  let label = listItem.querySelector("label");
+  label.addEventListener("click", () => {
+    let input = document.createElement("input");
+    input.type = "text";
+    input.value = label.textContent;
+    label.textContent = "";
+    listItem.replaceChild(input, label);
+    input.addEventListener("keyup", (event) => {
+      if (event.key === "Enter") {
+        let newLabelValue = input.value;
+        label.textContent = newLabelValue;
+        listItem.replaceChild(label, input);
+      }
+    });
+  });
 }
